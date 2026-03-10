@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProofPay Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-shield-check" style="color: var(--accent-green); font-size: 24px;"></i>
+                <h2>ProofPay</h2>
+            </div>
+            <p class="tagline">Secure every deal.</p>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#" class="nav-item"><i class="fa-regular fa-pen-to-square"></i> Create Deal</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-layer-group"></i> Active Deals</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-wallet"></i> Payments</a>
+                <a href="#" class="nav-item"><i class="fa-regular fa-user"></i> Profile</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> Settings</a>
+            </nav>
+
+            <div class="help-widget">
+                <div class="help-text">
+                    <h4>Need Help?</h4>
+                    <p>24/7 Support</p>
+                </div>
+                <button class="btn-icon-circular" onclick="alert('Opening support chat...')"><i class="fa-solid fa-headset"></i></button>
+            </div>
+            
+            <div class="footer-copy">© 2025 ProofPay</div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search deals, users...">
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fa-regular fa-bell"></i><span class="badge"></span></button>
+                    <button class="icon-btn"><i class="fa-regular fa-comment-dots"></i></button>
+                    <button class="btn-primary" onclick="alert('Initiating new deal workflow...')"><i class="fa-solid fa-plus"></i> Create Deal</button>
+                    <div class="profile-pic"><img src="https://i.pravatar.cc/150?img=11" alt="User"></div>
+                </div>
+            </header>
+
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Secure Your Payments with <span class="text-green">ProofPay</span></h1>
+                    <p>Escrow. Trust. <span class="text-underline">Delivered.</span></p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary large" onclick="alert('Creating new deal...')"><i class="fa-solid fa-plus"></i> Create New Deal</button>
+                        <button class="btn-secondary large" onclick="alert('Playing demo video...')"><i class="fa-solid fa-play"></i> Watch Demo</button>
+                    </div>
+                </div>
+                <div class="hero-graphic">
+                    <div class="glow-orb"></div>
+                    <i class="fa-solid fa-shield-halved huge-shield"></i>
+                </div>
+            </section>
+
+            <section class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <i class="fa-solid fa-coins text-green"></i> Total Escrow
+                    </div>
+                    <div class="stat-value">
+                        <h3>₹12,500</h3>
+                        <span class="badge-green"><i class="fa-solid fa-arrow-up"></i> 18.5%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <i class="fa-solid fa-lock text-blue"></i> Active Deals
+                    </div>
+                    <div class="stat-value">
+                        <h3>8</h3>
+                        <span class="sub-text">Live Now</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <i class="fa-regular fa-circle-check text-green"></i> Completed
+                    </div>
+                    <div class="stat-value">
+                        <h3>34</h3>
+                        <div class="mini-chart">
+                            <svg viewBox="0 0 100 30" class="sparkline blue-line"><path d="M0 30 Q 20 20, 40 25 T 70 10 T 100 0" fill="none" stroke="#3b82f6" stroke-width="2"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="deals-section">
+                <div class="section-header">
+                    <h2>Active Deals</h2>
+                    <a href="#" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="deals-grid">
+                    <div class="deal-card green-glow">
+                        <div class="deal-top">
+                            <h4>Logo Design</h4>
+                            <span class="price">₹2,000</span>
+                        </div>
+                        <div class="deal-user">
+                            <img src="https://i.pravatar.cc/150?img=12" alt="Rahul"> Rahul Mehta
+                        </div>
+                        <div class="deal-status text-green">
+                            <span class="dot bg-green"></span> Payment Secured
+                        </div>
+                        <div class="deal-footer">
+                            <div class="avatar-group">
+                                <img src="https://i.pravatar.cc/150?img=1" alt="A"><img src="https://i.pravatar.cc/150?img=2" alt="B"><img src="https://i.pravatar.cc/150?img=3" alt="C">
+                            </div>
+                            <div class="progress-bar-container"><div class="progress-bar bg-green" style="width: 100%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="deal-card orange-glow">
+                        <div class="deal-top">
+                            <h4>Website UI/UX</h4>
+                            <span class="price">₹5,000</span>
+                        </div>
+                        <div class="deal-user">
+                            <img src="https://i.pravatar.cc/150?img=15" alt="Aman"> Aman Verma
+                        </div>
+                        <div class="deal-status text-orange">
+                            <span class="dot bg-orange"></span> In Progress
+                        </div>
+                        <div class="deal-footer">
+                            <div class="avatar-group">
+                                <img src="https://i.pravatar.cc/150?img=4" alt="D"><img src="https://i.pravatar.cc/150?img=5" alt="E"><img src="https://i.pravatar.cc/150?img=6" alt="F">
+                            </div>
+                            <div class="progress-bar-container"><div class="progress-bar bg-orange" style="width: 60%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="deal-card blue-glow">
+                        <div class="deal-top">
+                            <h4>Instagram Ads</h4>
+                            <span class="price">₹3,500</span>
+                        </div>
+                        <div class="deal-user">
+                            <img src="https://i.pravatar.cc/150?img=20" alt="Neha"> Neha Singh
+                        </div>
+                        <div class="deal-status text-blue">
+                            <span class="dot bg-blue"></span> Delivered
+                        </div>
+                        <div class="deal-footer">
+                            <div class="avatar-group">
+                                <img src="https://i.pravatar.cc/150?img=7" alt="G"><img src="https://i.pravatar.cc/150?img=8" alt="H"><img src="https://i.pravatar.cc/150?img=9" alt="I">
+                            </div>
+                            <div class="progress-bar-container"><div class="progress-bar bg-blue" style="width: 90%;"></div><i class="fa-solid fa-circle-check text-green done-icon"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="trusted-badges">
+                <span>Secured by</span>
+                <strong>Razorpay</strong>
+                <strong><i>UPI</i></strong>
+                <span class="badge-item"><i class="fa-solid fa-shield-halved text-green"></i> Bank Grade Security</span>
+            </div>
+        </main>
+
+        <aside class="right-panel">
+            <div class="welcome-card">
+                <div class="welcome-text">
+                    <p>Welcome back!</p>
+                    <h2>Devansh 👋</h2>
+                </div>
+                <div class="profile-pic large"><img src="https://i.pravatar.cc/150?img=11" alt="Devansh"></div>
+            </div>
+
+            <div class="earnings-card">
+                <p>Monthly Earnings</p>
+                <div class="earn-amount">
+                    <h3>₹45,230</h3>
+                    <span class="badge-green"><i class="fa-solid fa-arrow-up"></i> 24%</span>
+                </div>
+                <svg viewBox="0 0 200 60" class="sparkline green-line" style="margin-top: 15px;">
+                    <path d="M0 50 Q 30 50, 60 40 T 120 30 T 160 10 T 200 0" fill="none" stroke="#00D26A" stroke-width="2"/>
+                    <path d="M0 50 Q 30 50, 60 40 T 120 30 T 160 10 T 200 0 L 200 60 L 0 60 Z" fill="rgba(0, 210, 106, 0.1)" stroke="none"/>
+                </svg>
+            </div>
+
+            <div class="quick-actions-section">
+                <h3>Quick Actions</h3>
+                <div class="quick-actions-grid">
+                    <button class="action-btn" onclick="alert('Creating deal...')">
+                        <div class="icon-wrapper bg-green-light"><i class="fa-solid fa-plus text-green"></i></div>
+                        <span>Create Deal</span>
+                    </button>
+                    <button class="action-btn" onclick="alert('Link copied to clipboard!')">
+                        <div class="icon-wrapper bg-blue-light"><i class="fa-solid fa-link text-blue"></i></div>
+                        <span>Share Link</span>
+                    </button>
+                    <button class="action-btn" onclick="alert('Withdrawal initiated.')">
+                        <div class="icon-wrapper bg-purple-light"><i class="fa-solid fa-money-bill-transfer text-purple"></i></div>
+                        <span>Withdraw</span>
+                    </button>
+                    <button class="action-btn" onclick="alert('Opening support portal...')">
+                        <div class="icon-wrapper bg-gray-light"><i class="fa-solid fa-headset"></i></div>
+                        <span>Support</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+          </html>
